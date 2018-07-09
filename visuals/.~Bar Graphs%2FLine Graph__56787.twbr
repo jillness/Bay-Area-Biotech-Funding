@@ -1,0 +1,1566 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0615.1128                               -->
+<workbook source-build='2018.1.2 (20181.18.0615.1128)' source-platform='mac' version='18.1' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/fig/workbooks/BarGraphsLineGraph?rev=1.6' id='AnnualFunding' path='/t/fig/workbooks' revision='1.0' site='fig' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Bay Area Biotech COMPLETE)' inline='true' name='federated.067hv4v14m86771a3q57b0gioo60' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bay Area Biotech COMPLETE' name='excel-direct.1ovkfcr0edmndk1axif1e0x6bqkt'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/stefanirobnett/Desktop/Project-2/Bay Area Biotech COMPLETE.xlsx' interpretationMode='0' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ovkfcr0edmndk1axif1e0x6bqkt' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:W347:no:A1:W347:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Categories' ordinal='1' />
+            <column datatype='string' name='Category Reduced' ordinal='2' />
+            <column datatype='date' date-parse-format='MM/dd/yyyy' name='Date' ordinal='3' />
+            <column datatype='integer' name='Genetics' ordinal='4' />
+            <column datatype='integer' name='Genetics Funding ($)' ordinal='5' />
+            <column datatype='integer' name='Health Care' ordinal='6' />
+            <column datatype='integer' name='Health Care Funding ($)' ordinal='7' />
+            <column datatype='integer' name='Health Diagnostics' ordinal='8' />
+            <column datatype='integer' name='Health Diagnostics Funding ($)' ordinal='9' />
+            <column datatype='integer' name='Information Technology and Software' ordinal='10' />
+            <column datatype='integer' name='Information Technology and Software Funding ($)' ordinal='11' />
+            <column datatype='integer' name='Medical' ordinal='12' />
+            <column datatype='integer' name='Medical Funding ($)' ordinal='13' />
+            <column datatype='integer' name='Neuroscience' ordinal='14' />
+            <column datatype='integer' name='Neuroscience Funding ($)' ordinal='15' />
+            <column datatype='integer' name='Number of Funding Rounds' ordinal='16' />
+            <column datatype='string' name='Organization/Person Name' ordinal='17' />
+            <column datatype='integer' name='Other' ordinal='18' />
+            <column datatype='integer' name='Other Funding ($)' ordinal='19' />
+            <column datatype='integer' name='Pharmaceuticals and Therapeutics' ordinal='20' />
+            <column datatype='integer' name='Pharmaceuticals and Therapeutics Funding ($)' ordinal='21' />
+            <column datatype='integer' name='Total Funding Amount ($)' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W347:no:A1:W347:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Categories]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Categories</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category Reduced</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category Reduced]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Category Reduced</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genetics</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Genetics]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Genetics</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genetics Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Genetics Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Genetics Funding ($)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health Care</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health Care]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Health Care</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health Care Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health Care Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Health Care Funding ($)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health Diagnostics</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health Diagnostics]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Health Diagnostics</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health Diagnostics Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health Diagnostics Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Health Diagnostics Funding ($)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Information Technology and Software</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Information Technology and Software]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Information Technology and Software</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Information Technology and Software Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Information Technology and Software Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Information Technology and Software Funding ($)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medical</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Medical]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Medical</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medical Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Medical Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Medical Funding ($)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neuroscience</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Neuroscience]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Neuroscience</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neuroscience Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Neuroscience Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Neuroscience Funding ($)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Funding Rounds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Funding Rounds]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Number of Funding Rounds</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Organization/Person Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Organization/Person Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Organization/Person Name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Other</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Other Funding ($)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pharmaceuticals and Therapeutics</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pharmaceuticals and Therapeutics]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Pharmaceuticals and Therapeutics</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pharmaceuticals and Therapeutics Funding ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pharmaceuticals and Therapeutics Funding ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Pharmaceuticals and Therapeutics Funding ($)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Funding Amount ($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Funding Amount ($)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Funding Amount ($)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;' value='Genetics ' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;' value='Health Care' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;' value='Health Diagnostics ' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;' value='IT &amp; Software' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software:qk]&quot;' value='IT and Software' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;' value='Medical ' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;' value='Neuroscience' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;' value='Other' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;' value='Pharma &amp;Therapeutics ' />
+          <alias key='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics:qk]&quot;' value='Pharma&amp; Therapeutics' />
+        </aliases>
+      </column>
+      <column caption='Chart Type Calc' datatype='string' name='[Calculation_3996029893745766400]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Genetics Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Genetics]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Health Care Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Health Care]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Health Diagnostics Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Health Diagnostics]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Information Technology and Software Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Information Technology and Software]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Medical Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Medical]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Neuroscience Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Neuroscience]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Funding Rounds]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Other Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Other]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Pharmaceuticals and Therapeutics Funding ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Pharmaceuticals and Therapeutics]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Funding Amount ($)]' role='measure' type='quantitative' />
+      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Genetics Funding ($)]' derivation='Sum' name='[sum:Genetics Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Genetics]' derivation='Sum' name='[sum:Genetics:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Health Care Funding ($)]' derivation='Sum' name='[sum:Health Care Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Health Care]' derivation='Sum' name='[sum:Health Care:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Health Diagnostics Funding ($)]' derivation='Sum' name='[sum:Health Diagnostics Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Health Diagnostics]' derivation='Sum' name='[sum:Health Diagnostics:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Information Technology and Software Funding ($)]' derivation='Sum' name='[sum:Information Technology and Software Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Information Technology and Software]' derivation='Sum' name='[sum:Information Technology and Software:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Medical Funding ($)]' derivation='Sum' name='[sum:Medical Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Medical]' derivation='Sum' name='[sum:Medical:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Neuroscience Funding ($)]' derivation='Sum' name='[sum:Neuroscience Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Neuroscience]' derivation='Sum' name='[sum:Neuroscience:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Funding Rounds]' derivation='Sum' name='[sum:Number of Funding Rounds:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Other Funding ($)]' derivation='Sum' name='[sum:Other Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Other]' derivation='Sum' name='[sum:Other:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Pharmaceuticals and Therapeutics Funding ($)]' derivation='Sum' name='[sum:Pharmaceuticals and Therapeutics Funding ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Pharmaceuticals and Therapeutics]' derivation='Sum' name='[sum:Pharmaceuticals and Therapeutics:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Funding Amount ($)]' derivation='Sum' name='[sum:Total Funding Amount ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_067hv4v14m86771a3q57b0.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>118</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categories</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categories</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category Reduced</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category Reduced]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category Reduced</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genetics</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Genetics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genetics</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genetics Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Genetics Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genetics Funding ($)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Health Care</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Health Care]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Health Care</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Health Care Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Health Care Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Health Care Funding ($)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Health Diagnostics</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Health Diagnostics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Health Diagnostics</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Health Diagnostics Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Health Diagnostics Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Health Diagnostics Funding ($)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Information Technology and Software</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Information Technology and Software]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Information Technology and Software</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Information Technology and Software Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Information Technology and Software Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Information Technology and Software Funding ($)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Medical</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Medical]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Medical</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Medical Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Medical Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Medical Funding ($)</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Neuroscience</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Neuroscience]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Neuroscience</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Neuroscience Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Neuroscience Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Neuroscience Funding ($)</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Funding Rounds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Funding Rounds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Funding Rounds</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Organization/Person Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Organization/Person Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Organization/Person Name</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>346</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Other]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Other Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other Funding ($)</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pharmaceuticals and Therapeutics</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pharmaceuticals and Therapeutics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pharmaceuticals and Therapeutics</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pharmaceuticals and Therapeutics Funding ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pharmaceuticals and Therapeutics Funding ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pharmaceuticals and Therapeutics Funding ($)</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>83</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Funding Amount ($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Funding Amount ($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Funding Amount ($)</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>346</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.281016' measure-ordering='alphabetic' measure-percentage='0.515695' parameter-percentage='0.203288' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Date:ok]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#347da0'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#81c3cb'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>2014</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='blue_teal_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care:qk]&quot;</bucket>
+            </map>
+            <map to='#306c94'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical:qk]&quot;</bucket>
+            </map>
+            <map to='#3481a3'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics:qk]&quot;</bucket>
+            </map>
+            <map to='#3b97b2'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics:qk]&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;</bucket>
+            </map>
+            <map to='#57abbd'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics:qk]&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;</bucket>
+            </map>
+            <map to='#78bec8'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software:qk]&quot;</bucket>
+            </map>
+            <map to='#7b848f'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;</bucket>
+            </map>
+            <map to='#98d0cf'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:F1:qk]&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;</bucket>
+            </map>
+            <map to='#a3cce9'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Number of Funding Rounds:qk]&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other:qk]&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Total Funding Amount ($):qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Chart Type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Stacked Line&quot;'>
+          <calculation class='tableau' formula='&quot;Stacked Line&quot;' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Chart Type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Stacked Line&quot;'>
+        <calculation class='tableau' formula='&quot;Stacked Line&quot;' />
+        <members>
+          <member value='&quot;Stacked Bar&quot;' />
+          <member value='&quot;Multi Bar&quot;' />
+          <member value='&quot;Stacked Line&quot;' />
+        </members>
+      </column>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Multi Bar'>
+      <repository-location derived-from='http://localhost:9100/t/fig/workbooks/BarGraphsLineGraph/Sheet3?rev=' id='Sheet3' path='/t/fig/workbooks/BarGraphsLineGraph' revision='' site='fig' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Bay Area Biotech COMPLETE)' name='federated.067hv4v14m86771a3q57b0gioo60' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Chart Type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Stacked Line&quot;'>
+              <calculation class='tableau' formula='&quot;Stacked Line&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.067hv4v14m86771a3q57b0gioo60'>
+            <column caption='Chart Type Calc' datatype='string' name='[Calculation_3996029893745766400]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Genetics Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Care Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Diagnostics Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Information Technology and Software Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Medical Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neuroscience Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Other Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Pharmaceuticals and Therapeutics Funding ($)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3996029893745766400]' derivation='None' name='[none:Calculation_3996029893745766400:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Genetics Funding ($)]' derivation='Sum' name='[sum:Genetics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Care Funding ($)]' derivation='Sum' name='[sum:Health Care Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Diagnostics Funding ($)]' derivation='Sum' name='[sum:Health Diagnostics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Information Technology and Software Funding ($)]' derivation='Sum' name='[sum:Information Technology and Software Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medical Funding ($)]' derivation='Sum' name='[sum:Medical Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neuroscience Funding ($)]' derivation='Sum' name='[sum:Neuroscience Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Other Funding ($)]' derivation='Sum' name='[sum:Other Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pharmaceuticals and Therapeutics Funding ($)]' derivation='Sum' name='[sum:Pharmaceuticals and Therapeutics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.067hv4v14m86771a3q57b0gioo60].[none:Calculation_3996029893745766400:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_3996029893745766400:nk]' member='&quot;All&quot;' />
+              <groupfilter function='member' level='[none:Calculation_3996029893745766400:nk]' member='&quot;Multi Bar&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]</column>
+            <column>[federated.067hv4v14m86771a3q57b0gioo60].[none:Calculation_3996029893745766400:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]' scope='rows' value='Funds Raised' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]</rows>
+        <cols>([federated.067hv4v14m86771a3q57b0gioo60].[yr:Date:ok] / [federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Funding Rounds</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/fig/workbooks/BarGraphsLineGraph/Sheet5?rev=' id='Sheet5' path='/t/fig/workbooks/BarGraphsLineGraph' revision='' site='fig' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Bay Area Biotech COMPLETE)' name='federated.067hv4v14m86771a3q57b0gioo60' />
+          </datasources>
+          <datasource-dependencies datasource='federated.067hv4v14m86771a3q57b0gioo60'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Funding Rounds]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Funding Rounds]' derivation='Sum' name='[sum:Number of Funding Rounds:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.067hv4v14m86771a3q57b0gioo60].[sum:Number of Funding Rounds:qk]' />
+              <text column='[federated.067hv4v14m86771a3q57b0gioo60].[yr:Date:ok]' />
+              <color column='[federated.067hv4v14m86771a3q57b0gioo60].[yr:Date:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Projects per Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/fig/workbooks/BarGraphsLineGraph/Sheet6?rev=' id='Sheet6' path='/t/fig/workbooks/BarGraphsLineGraph' revision='' site='fig' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Bay Area Biotech COMPLETE)' name='federated.067hv4v14m86771a3q57b0gioo60' />
+          </datasources>
+          <datasource-dependencies datasource='federated.067hv4v14m86771a3q57b0gioo60'>
+            <column datatype='integer' name='[Genetics]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Care]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Diagnostics]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Information Technology and Software]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Medical]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neuroscience]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Other]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Pharmaceuticals and Therapeutics]' role='measure' type='quantitative' />
+            <column-instance column='[Genetics]' derivation='Sum' name='[sum:Genetics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Care]' derivation='Sum' name='[sum:Health Care:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Diagnostics]' derivation='Sum' name='[sum:Health Diagnostics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Information Technology and Software]' derivation='Sum' name='[sum:Information Technology and Software:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medical]' derivation='Sum' name='[sum:Medical:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neuroscience]' derivation='Sum' name='[sum:Neuroscience:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Other]' derivation='Sum' name='[sum:Other:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pharmaceuticals and Therapeutics]' derivation='Sum' name='[sum:Pharmaceuticals and Therapeutics:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other:qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience:qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software:qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics:qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics:qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics:qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical:qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]' scope='rows' value='Number of Projects' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='183' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]</rows>
+        <cols>[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Stacked Bar'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/fig/workbooks/BarGraphsLineGraph/Sheet1?rev=' id='Sheet1' path='/t/fig/workbooks/BarGraphsLineGraph' revision='' site='fig' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Bay Area Biotech COMPLETE)' name='federated.067hv4v14m86771a3q57b0gioo60' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Chart Type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Stacked Line&quot;'>
+              <calculation class='tableau' formula='&quot;Stacked Line&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.067hv4v14m86771a3q57b0gioo60'>
+            <column caption='Chart Type Calc' datatype='string' name='[Calculation_3996029893745766400]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Genetics Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Care Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Diagnostics Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Information Technology and Software Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Medical Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neuroscience Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Other Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Pharmaceuticals and Therapeutics Funding ($)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3996029893745766400]' derivation='None' name='[none:Calculation_3996029893745766400:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Genetics Funding ($)]' derivation='Sum' name='[sum:Genetics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Care Funding ($)]' derivation='Sum' name='[sum:Health Care Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Diagnostics Funding ($)]' derivation='Sum' name='[sum:Health Diagnostics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Information Technology and Software Funding ($)]' derivation='Sum' name='[sum:Information Technology and Software Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medical Funding ($)]' derivation='Sum' name='[sum:Medical Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neuroscience Funding ($)]' derivation='Sum' name='[sum:Neuroscience Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Other Funding ($)]' derivation='Sum' name='[sum:Other Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pharmaceuticals and Therapeutics Funding ($)]' derivation='Sum' name='[sum:Pharmaceuticals and Therapeutics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.067hv4v14m86771a3q57b0gioo60].[none:Calculation_3996029893745766400:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_3996029893745766400:nk]' member='&quot;All&quot;' />
+              <groupfilter function='member' level='[none:Calculation_3996029893745766400:nk]' member='&quot;Stacked Bar&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.067hv4v14m86771a3q57b0gioo60].[yr:Date:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>2014</bucket>
+              <bucket>2015</bucket>
+              <bucket>2016</bucket>
+              <bucket>2018</bucket>
+              <bucket>2017</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]</column>
+            <column>[federated.067hv4v14m86771a3q57b0gioo60].[none:Calculation_3996029893745766400:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]' scope='rows' value='Funds Raised' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='130' />
+            <format attr='cell-w' value='16' />
+            <format attr='cell-h' value='16' />
+            <format attr='cell' value='16' />
+            <format attr='cell-q' value='80' />
+            <format attr='width' field='[federated.067hv4v14m86771a3q57b0gioo60].[yr:Date:ok]' value='130' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3183425664901733' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]</rows>
+        <cols>[federated.067hv4v14m86771a3q57b0gioo60].[yr:Date:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Stacked Line'>
+      <repository-location derived-from='http://localhost:9100/t/fig/workbooks/BarGraphsLineGraph/Sheet2?rev=' id='Sheet2' path='/t/fig/workbooks/BarGraphsLineGraph' revision='' site='fig' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Bay Area Biotech COMPLETE)' name='federated.067hv4v14m86771a3q57b0gioo60' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Chart Type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Stacked Line&quot;'>
+              <calculation class='tableau' formula='&quot;Stacked Line&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.067hv4v14m86771a3q57b0gioo60'>
+            <column caption='Chart Type Calc' datatype='string' name='[Calculation_3996029893745766400]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Genetics Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Care Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Health Diagnostics Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Information Technology and Software Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Medical Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neuroscience Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Other Funding ($)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Pharmaceuticals and Therapeutics Funding ($)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3996029893745766400]' derivation='None' name='[none:Calculation_3996029893745766400:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Genetics Funding ($)]' derivation='Sum' name='[sum:Genetics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Care Funding ($)]' derivation='Sum' name='[sum:Health Care Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health Diagnostics Funding ($)]' derivation='Sum' name='[sum:Health Diagnostics Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Information Technology and Software Funding ($)]' derivation='Sum' name='[sum:Information Technology and Software Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medical Funding ($)]' derivation='Sum' name='[sum:Medical Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neuroscience Funding ($)]' derivation='Sum' name='[sum:Neuroscience Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Other Funding ($)]' derivation='Sum' name='[sum:Other Funding ($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pharmaceuticals and Therapeutics Funding ($)]' derivation='Sum' name='[sum:Pharmaceuticals and Therapeutics Funding ($):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Neuroscience Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Genetics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Other Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Information Technology and Software Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Pharmaceuticals and Therapeutics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Diagnostics Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Medical Funding ($):qk]&quot;</bucket>
+              <bucket>&quot;[federated.067hv4v14m86771a3q57b0gioo60].[sum:Health Care Funding ($):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.067hv4v14m86771a3q57b0gioo60].[none:Calculation_3996029893745766400:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_3996029893745766400:nk]' member='&quot;All&quot;' />
+              <groupfilter function='member' level='[none:Calculation_3996029893745766400:nk]' member='&quot;Stacked Line&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]</column>
+            <column>[federated.067hv4v14m86771a3q57b0gioo60].[none:Calculation_3996029893745766400:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]' scope='rows' value='Funds Raised' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.067hv4v14m86771a3q57b0gioo60].[none:Date:ok]' value='196' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' value='Categories'>
+              <formatted-text>
+                <run>Categories</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='188' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.067hv4v14m86771a3q57b0gioo60].[Multiple Values]</rows>
+        <cols>[federated.067hv4v14m86771a3q57b0gioo60].[none:Date:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='1' param='vert' type='layout-flow' w='82400' x='800' y='1000'>
+              <zone h='125' id='8' name='Multi Bar' show-title='false' w='82400' x='800' y='1000'>
+                <layout-cache has-max-size-h='true' maxheight='1' minheight='1' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3000' id='9' name='Stacked Bar' w='82400' x='800' y='1125'>
+                <layout-cache has-max-size-h='true' maxheight='24' minheight='24' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='94875' id='3' name='Stacked Line' show-title='false' w='82400' x='800' y='4125'>
+                <layout-cache minheight='121' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='4' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='6500' id='7' mode='compact' param='[Parameters].[Parameter 1]' type='paramctrl' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='21000' id='6' name='Stacked Line' pane-specification-id='0' param='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' show-title='false' type='color' w='16000' x='83200' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Stacked Bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='10' param='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' type='color' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Stacked Line'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.067hv4v14m86771a3q57b0gioo60].[:Measure Names]' type='color' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Multi Bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Multi Bar'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stacked Bar'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stacked Line'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+</workbook>
