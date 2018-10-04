@@ -44,9 +44,6 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">Biotech Funding Analysis</a>
             </div>
@@ -147,7 +144,19 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <iframe src="https://us-west-2b.online.tableau.com/t/fig/views/AnnualFunding/AnnualFundingBiotech?
+                            <iframe src="https://public.tableau.com/views/BayAreaBiotechFunding/FundingbyCategory?
+                                        :showVizHome=no&:embed=true"
+                            width="100%" height="800"></iframe>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Funding by Category
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <iframe src="https://public.tableau.com/shared/J4J5MPHJJ?
                                         :showVizHome=no&:embed=true"
                             width="100%" height="800"></iframe>
                         </div>
@@ -213,20 +222,35 @@
 
                 <div class="col-lg-9">
                         <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> Pie graphs
-                                </div>
-                                <!-- /.panel-heading -->
-                                <div class="panel-body">
-                                    <div class="panel-body">
-                                        <iframe src="https://us-west-2b.online.tableau.com/t/fig/views/Piecharts/PieChart?
-                                                    :showVizHome=no&:embed=true"
-                                        width="100%" height="800"></iframe>
-                                    </div>
-                                </div>
-                                <!-- /.panel-body -->
+                            <div class="panel-heading">
+                                <i class="fa fa-bar-chart-o fa-fw"></i> Number of Funding Rounds by Type
                             </div>
-                            <!-- /.panel -->
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="panel-body">
+                                    <iframe src="https://public.tableau.com/shared/WXFKK6HF9?
+                                                :showVizHome=no&:embed=true"
+                                    width="100%" height="800"></iframe>
+                                </div>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel --> 
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-bar-chart-o fa-fw"></i> Funding Total by Type
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="panel-body">
+                                    <iframe src="https://public.tableau.com/views/FundingRoundTypesTotal/Sheet1?
+                                                :showVizHome=no&:embed=true"
+                                    width="100%" height="800"></iframe>
+                                </div>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel --> 
 
                 </div>
             </div>
